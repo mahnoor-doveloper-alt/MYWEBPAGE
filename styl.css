@@ -1,0 +1,642 @@
+/* Navbar Styling */
+.navbar {
+    background-color:maroon;
+}
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+}
+.nav-item {
+    margin-right: 15px;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    
+}
+.icons i {
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+.cart-badge {
+    position: relative;
+    margin-left: 30px; /* Cart ko aur right side shift karne ke liye */
+}
+.cart-badge span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 6px;
+    font-size: 12px;
+    
+}
+
+.icons .fa-user {
+    display: none;
+}
+
+
+/* Search Box Fixed */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 180px;
+    height: 35px;
+}
+
+/* Search Input Field */
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Search Icon */
+.search-box i {
+    font-size: 16px;
+    color: black;
+    margin-left: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .search-box {
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+    padding: 5px 20px; /* Yeh navbar ki height choti karega */
+    min-height: 50px; /* Navbar ka minimum height set karne ke liye */
+}
+
+.navbar-brand {
+    font-size: 18px; /* Shop ka naam chota karne ke liye */
+}
+
+.navbar-nav .nav-link {
+    padding: 5px 10px; /* Links ke beech gap ko kam karne ke liye */
+    font-size: 14px; /* Font size chota karne ke liye */
+}
+
+.search-bar {
+    width: 180px; /* Search bar ka size chota karne ke liye */
+    height: 35px; /* Search bar ka height kam karne ke liye */
+}
+
+.cart-icon {
+    font-size: 18px; /* Cart icon ka size thoda chota karne ke liye */
+}
+
+.navbar-toggler {
+    padding: 4px 8px; /* Button ka padding chota karega */
+    font-size: 18px; /* Lines ka size chota karne ke liye */
+    border-radius: 5px; /* Border ko halka curve dene ke liye */
+}
+
+.navbar-toggler-icon {
+    width: 20px; /* Icon ki width choti karega */
+    height: 15px; /* Icon ki height choti karega */
+}
+
+
+/*..................HERO SECTION................................*/
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    background: url('images/mjj.jpg') no-repeat center center/cover; /* Add your background image */
+    position: relative;
+}
+
+/* Dark Overlay for Visibility */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Promo Banner Styling */
+.promo-banner {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.356); /* Light background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.promo-banner h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: hsl(0, 100%, 99%);
+    text-transform: uppercase;
+}
+
+/* Description */
+.promo-banner p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Button */
+.btn-book {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: hsl(9, 20%, 93%);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-book:hover {
+    background-color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .promo-banner {
+        padding: 20px;
+    }
+
+    .promo-banner h2 {
+        font-size: 30px;
+    }
+
+    .promo-banner p {
+        font-size: 16px;
+    }
+
+    .btn-book {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Promo Banner Styling */
+
+
+/* Heading Styling */
+.promo-banner h2 {
+    font-size: 28px; /* Smaller heading */
+    font-weight: bold;
+    color: #fff1f1; /* Dark color for better readability */
+}
+
+/* Paragraph Styling */
+.promo-banner p {
+    font-size: 16px; /* Smaller text */
+    color: hsl(0, 100%, 98%);
+}
+
+/* Button Styling */
+.promo-banner .btn-book {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: maroon;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .promo-banner {
+        max-width: 350px; /* Reduce width for small screens */
+        padding: 15px; /* Adjust padding */
+    }
+    
+    .promo-banner h2 {
+        font-size: 22px; /* Smaller heading on mobile */
+    }
+    
+    .promo-banner p {
+        font-size: 14px;
+    }
+    
+    .promo-banner .btn-book {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+.promo-banner {
+    background: none !important; /* Background ko remove kar diya */
+    padding: 20px; /* Thoda space rehne dein */
+    text-align: center; /* Text center ho */
+    color: white; /* Text ka color white rakhein */
+}
+.btn-book {
+    display: inline-block;
+    background-color: maroon; /* Bright orange */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+.btn-book:hover {
+    background-color: maroon; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-book:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+
+/*.....................PRODUCT GRID............................*/
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-card h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.product-card p {
+    color:maroon;
+    font-size: 18px;
+}
+.btn-custom {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-custom:hover {
+
+    background-color: #004d3b;
+}
+
+
+.btn-custom {
+    background-color: maroon;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: maroon;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.product-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+/*...............................Testimonials:.............*/
+.testimonial-card img {
+    width: 103px; /* Same size for all images */
+    height: 106px;
+    object-fit: cover; /* Ensures images don't stretch */
+    border: 3px solid maroon; /* Border color set to teal */
+    padding: 5px; /* Gives a neat look */
+}
+
+h2.text-center {
+    margin-top: -3px; /* Heading ko 20px uper shift karega */
+}
+
+
+
+/*.........................Newsletter Signup.................*/
+
+/* General Styling */
+
+.newsletter-container {
+    background-color: #f7f7f7; /* Light background */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:maroon;
+}
+
+.newsletter-box {
+    background-color: white; /* White background for form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px;
+    width: 100%;
+}
+
+.newsletter-box h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.newsletter-box p {
+    font-size: 16px;
+    color: black;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control:focus {
+    border-color: maroon; /* Focus color */
+    box-shadow: maroon;
+}
+
+.input-group-text {
+    background-color:maroon;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.form-check-label {
+    font-size: 14px;
+    color: #333;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: maroon;
+    border-color: maroon;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.btn-primary:focus {
+    box-shadow: black;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 767px) {
+    .newsletter-box {
+        padding: 20px;
+    }
+
+    .newsletter-box h2 {
+        font-size: 24px;
+    }
+
+    .newsletter-box p {
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+
+  
+
+/*.....................FOOTER......................*/
+
+footer {
+    background-color: maroon; 
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+footer h5 {
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 26px;
+    color:white; 
+    margin-left: 29px;
+}
+
+footer p, footer a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 27px;
+}
+
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Social Media Icons */
+.footer-social a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+
+/*.............................SPACING IN PAGES.......................*/
+
+
+
+.hero {
+    margin-bottom: 50px; /* Hero section ke baad 100px space */
+}
+
+#products {
+    padding-top: 50px; /* Products section ka upper padding */
+}
+
+/* Mobile screens ke liye spacing adjust karne ke liye */
+@media (max-width: 768px) {
+    .hero {
+        margin-bottom: 60px;
+    }
+    #products {
+        padding-top: 30px;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+.testimonials {
+    margin-bottom: 50px;
+}
+
+.newsletter-container {
+    margin-top: 50px;
+}
+
+/* Mobile screens pe spacing kam karne ke liye */
+@media (max-width: 768px) {
+    .testimonials {
+        margin-bottom: 50px;
+    }
+    .newsletter-container {
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#products {
+    margin-bottom: 30px; /* Products ke baad 100px space */
+}
+
+.testimonials {
+    margin-top: 30px; /* Testimonials ke start pe 100px space */
+}
+
+/* Mobile screens pe spacing kam karne ke liye */
+@media (max-width: 768px) {
+    #products {
+        margin-bottom: 60px;
+    }
+    .testimonials {
+        margin-top: 60px;
+    }
+}
+
+
+
+
+
+.newsletter-container {
+    margin-bottom: 30px; /* Newsletter ke baad 80px space */
+}
+
+footer {
+    margin-top: 30px; /* Footer ke start pe 80px space */
+}
+
+/* Mobile screens pe spacing adjust karne ke liye */
+@media (max-width: 768px) {
+    .newsletter-container {
+        margin-bottom: 50px;
+    }
+    footer {
+        margin-top: 50px;
+    }
+}
+
