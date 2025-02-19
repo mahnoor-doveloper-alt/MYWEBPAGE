@@ -1,4 +1,8 @@
 /* Navbar Styling */
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     background-color:maroon;
 }
@@ -485,26 +489,24 @@ h2.text-center {
 /*.....................FOOTER......................*/
 
 footer {
-    background-color: maroon; 
+    background-color: maroon;
     padding: 30px 0;
     font-size: 16px;
+    color: white;
 }
 
 footer h5 {
     font-weight: bold;
     font-size: 23px;
-    margin-bottom: 26px;
-    color:white; 
-    margin-left: 29px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 footer p, footer a {
     color: #ddd;
     text-decoration: none;
     transition: 0.3s;
-    margin-left: 27px;
 }
-
 
 footer ul {
     padding: 0;
@@ -515,27 +517,59 @@ footer ul li {
     margin-bottom: 10px;
 }
 
+/* Desktop Layout */
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: left;
 }
 
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+/* Footer Bottom */
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
-    border-top: 1px solid #555;
+    border-top: 1px solid black;
     padding-top: 15px;
     font-size: 14px;
 }
 
-/* Social Media Icons */
-.footer-social a {
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 30px;
-    color: white;
+/* Mobile Responsive Fix */
+@media (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .col-md-3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    footer ul {
+        padding-left: 0;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin: 0 10px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 
